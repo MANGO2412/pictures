@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* style for the menu */
+
+li,a,button{
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ecf0f1;
+}
+
+.menu h1{
+    color: #ecf0f1;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+
+.logo{
+    cursor: pointer;
+}
+
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+
+
+/* style to home */
+.main{
+    background-image: url('../img/pexels-robert-lozano-12631100.jpg');
+    border: 1px solid black;
+    background-size: cover;
+    height: 600px;
+}
+
+
+.main-section{
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.main-section  header, p{
+    color: #ecf0f1;
+}
+
+
+.main-section header{
+    font-size: 60px;
+}
+
+.main-section p{
+    font-size: 30px;
+}
+
+
+.gallery{
+    display:  grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(18,5vw);
+    grid-gap: 15px;
+}
+
+.gallery-img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover; 
+}
+
+
+.gallery__item--1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+
+.gallery__item--2{
+     grid-column-start: 3;
+     grid-column-end: 7;
+     grid-row-start: 1;
+     grid-row-end: 6;
+}
+
+
+.gallery__item--3 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item--5 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item--6 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+
+
+.gallery__item--7{
+       grid-row-start: 9;
+       grid-row-end: 12;
+       grid-column-start: 1;
+       grid-column-end: 3;
+
+}
+
+
+
+.gallery__item--8{
+    grid-row-start: 9;
+    grid-row-end: 12;
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+
+
+.gallery__item--9{
+    grid-row-start: 9;
+    grid-row-end: 15;
+    grid-column-start: 6;
+    grid-column-end: 9;
+}
+
+
+.gallery__item--10{
+    grid-row-start: 12;
+    grid-row-end: 15;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+
+
+.gallery__item--11{
+    grid-row-start: 12;
+    grid-row-end: 15;
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+
+ 
+.gallery__item--12{
+    grid-row-start: 15;
+    grid-row-end: 18;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.gallery__item--13{
+    grid-row-start: 15;
+    grid-row-end: 18;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    
+}
+
+
+.gallery__item--14{
+    grid-row-start: 15;
+    grid-row-end: 18;
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+.gallery__item--15{
+    grid-row-start: 15;
+    grid-row-end: 18;
+    grid-column-start: 7;
+    grid-column-end: 9;
+} 
+
+.info{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+     align-items: center; 
+}
+
+.info section{
+   height: 50%;
+   width: 80%;
+   padding: 20px;
+}
+
+.info section header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.info section p{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.info section ul{
+    margin-top: 29px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.info section ul li a img {
+    width: 100px;
+    height: auto;
+} 
+
+
